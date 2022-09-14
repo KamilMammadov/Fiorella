@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+.logo img{
+    width: 100%;
+}
+
+.menu .dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.menu .dropdown .content{
+    padding-top: 30px;
+    position: absolute;
+    width: 122px;
+    visibility: hidden;
+    transition: .5s;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 999;
+    top: 29px;
+    right: -66px;
+}
+.menu .dropdown .content ul{
+    padding: 0 !important;
+}
+.menu .dropdown:hover .content{
+ 
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.menu a{
+    margin-left: 50px;
+    color: #212529;
+    transform: .5s;
+  
+}
+
+.menu a{
+    margin-left: 50px;
+    color: #212529;
+    transform: .5s;
+    position: relative;
+}
+
+.menu a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu a:hover::before{
+    width: 100%;
+}
+
+.menu i{
+    margin: 0 15px;
+}
+.menu .bar{
+    display: none;
+}
+.menu .amount{
+
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    width: 13px;
+    height: 13px;
+    top: -6px;
+    right: -8px;
+    font-size: 8px;
+    line-height: 15px;
+ text-align: center;
+}
+
+#slider{
+    padding: 5rem 0;
+    background-image: url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-slider-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#slider p{
+    padding-right: 12rem;
+}
+
+#shop{
+    padding: 50px 0;
+}
+
+.shop-all .top-dp .left .menu{
+    display: none;
+}
+
+.top-dp{
+    display: flex;
+    justify-content: space-between;
+}
+.top-dp .left a{
+    color: #212529;
+    padding-right: 40px;
+    transition: .5s;
+}
+.top-dp .left a:hover{
+    color: rgb(212, 45, 45);
+}
+
+.top-dp .right span,i{
+    cursor: pointer;
+}
+
+.top-dp .right .dropdown ul li{
+  list-style-type: none;
+  color: #212529;
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+  
+}
+
+.dropdown .dp-content{
+    position: absolute;
+    width: 200px;
+    visibility: hidden;
+    transition: .5s;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 999;
+    top: 50px;
+    right: -77px;
+}
+
+.dropdown:hover .dp-content{
+ 
+    visibility: visible;
+    opacity: 1;
+}
+
+.right-dp img{
+    width: 100%;
+    transition: 0.5s;
+}
+.right-dp .bxtop{
+    overflow: hidden;
+    
+}
+
+.right-dp .box .sold{
+    position: absolute;
+    display: block;
+    z-index: 99;
+    top: 2%;
+    left: 05%;
+    padding: 0 1rem;
+    background-color: #212529;
+    color: #fff;
+}
+.right-dp .box .bxtop img{
+    z-index: 1;
+}
+.right-dp .bxtop .sold span{
+    z-index: 999;
+}
+.right-dp .bxtop:hover img{
+    transform: scale(1.1);
+    
+}
+.right-dp .box{
+  position: relative;
+  overflow: hidden;
+}
+
+.right-dp .box .bxbottom{
+    text-align: center;
+    margin-top: 10px;
+}
+.right-dp .box .bxbottom h5{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.right-dp .box .bxbottom p{
+   opacity: 0.6;
+   position: relative;
+   z-index: 2;
+    opacity: 1;
+}
+
+
+.right-dp .box .bxbottom p::before{
+    content: 'Add to Cart';
+    font-size: 12px;
+    position: absolute;
+    width: 0%;
+    height: auto;
+    bottom: 0%;
+    left: 0%;
+    z-index: 1;
+    transition: .5s;
+    opacity: 0;
+ }
+ .right-dp .box .bxbottom p{
+     padding: 10px;
+ }
+ .right-dp .box .bxbottom p::after{
+    content: '229$';
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0%;
+    right: 0%;
+    z-index: 1;
+    transition: .5s;
+    opacity: 0.5;
+ }
+ .right-dp .box .bxbottom p:hover::before{
+   width: 100%;
+   opacity: 0.5;
+   color: #f34f3f;
+ }
+ .right-dp .box .bxbottom p:hover::after{
+     width: 0%;
+     opacity: 0;
+ }
+ 
+
+ 
+
+
+#suprise{
+    padding: 7rem 0;
+    background-color: #f7f7f7;
+}
+
+.suprise-all .sleft{
+    overflow: hidden;
+    position: relative;
+}
+.suprise-all .sleft .play{
+   padding: 40px;
+   background-color: #fff;
+   position: absolute;
+   border-radius: 50%;
+    top: 35%;
+    left: 40%;
+    z-index: 999;
+   
+}
+.suprise-all .sleft .play i{
+  font-size: 45px;
+  color: red;
+ }
+.suprise-all .sleft img{
+    width: 100%;
+    transition: .5s;
+    z-index: 1;
+
+}
+.suprise-all .sleft img:hover{
+    transform: scale(1.05);
+
+}
+
+.suprise-all .sright .stop h2{
+    font-size: 45px;
+}
+
+.suprise-all .sright .sbottom .txt img{
+height: 18px;
+}
+
+.suprise-all .sright .sbottom .txt p{
+ margin-left: 15px;
+ opacity: 0.7;
+
+}
+
+#expert{
+    padding: 6rem 0;
+}
+
+.ebottom .box .boxbottom h6{
+    font-size: 13px;
+}
+.ebottom .box .boxbottom span{
+    font-size: 12px;
+}
+
+#subs{
+    padding: 7rem 0;
+    background-image: url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.sub-all .subbottom input{
+    padding: 19px 12px;
+    width: 32%;
+    font-size: 17px;
+
+   
+}
+.sub-all .subbottom button{
+    padding: 20.5px 40px;
+    font-size: 17px;
+    margin-right: 5px;
+    border: none;
+    background-color: #f34f3f;
+    color: #fff;
+   
+}
+
+#blog{
+    padding: 5rem 0;
+    background-color: #f8f8f8;
+}
+.blbottom .box .blogtop{
+    position: relative;
+}
+.blbottom .box .blogtop .date{
+    position: absolute;
+    background-color: #fff;
+    padding: 0 7px;
+    top: 3%;
+    left: 3%;
+    z-index: 999;
+}
+
+.blbottom .box .blogtop .date span{
+    font-size: 11px;
+}
+
+.blbottom img{
+    width: 100%;
+    transition: .5s;
+    z-index: 1;
+
+}
+.blbottom .box .blogtop{
+    overflow: hidden;
+}
+.blbottom .box .blogtop img:hover{
+    transform: scale(1.05);
+}
+.blbottom .box .blogbottom a{
+    color: #212529;
+   font-size: 22px;
+
+}
+
+.blbottom .box .blogbottom p{
+   opacity: 0.7;
+    padding: 15px 0;
+}
+.blbottom .box .blogbottom {
+padding: 30px 20px;
+}
+
+.text-all p{
+    font-size: 23px;
+}
+
+.text-all .names {
+    font-size: 14px;
+    margin: 0;
+}
+
+.text-all span{
+    font-size: 11px;
+}
+
+@media (max-width:576px){
+
+    .menu a{
+        display: none; 
+    }
+    .menu i{
+        display: none;
+    }
+    .menu span{
+        display: none;
+    }
+ .menu .bar{
+     display: block;
+ }
+
+ .shop-all .top-dp .left .menu{
+    display: block;
+}
+.shop-all .top-dp .left a{
+    display: none;
+}
+
+}
